@@ -1,0 +1,55 @@
+.title{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  font-family: Spartan;
+}
+.login-form{
+  font-family: Spartan;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  text-align: center;
+  padding: 2em;
+  max-width: 400px;
+  box-shadow: 0px 2px 16px 2px rgba(0,0,0,0.42);
+  -webkit-box-shadow: 0px 2px 16px 2px rgba(0,0,0,0.42);
+  -moz-box-shadow: 0px 2px 16px 2px rgba(0,0,0,0.42);
+  .inputs{
+    padding:0.5em 0;
+    input{
+      background-color: #f2f2f2;
+      border: 1px solid transparent;
+      padding: 4px 8px;
+      width: 300px;
+    }
+  }
+  .checkbox-remember-me{
+    color:rgb(151 151 151);
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    input{
+      margin-right: 1em;
+    }
+  }
+  .submit-button{
+    button{
+      margin: 1em 0;
+      background-color: #03294e;
+      color: #fff;
+      width: 100%;
+    }
+  }
+  .switch-mode{
+    color:rgb(151 151 151);
+    font-size: 10px;
+    a{
+      color:rgb(73, 73, 220);
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.btn-check-weather{
+  background-color: #03294e;
+  color: #fff
+}
+.logout{
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  button{
+    background-color: #03294e;
+    color: #fff;
+    width: 100%;
+  }
+}
+.forcast{
+  display: flex;
+  justify-content: center;
+  overflow-x: scroll;
+  gap: 1em;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.forcast::-webkit-scrollbar {
+  display: none;
+}

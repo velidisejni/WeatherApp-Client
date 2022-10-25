@@ -1,0 +1,87 @@
+<section class="vh-100">
+  <div class="container py-5 h-100">
+    <h2 class="title">Weather App</h2>
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="login-form">
+        <form #f="ngForm" *ngIf="loginMode">
+          <div class="email-input inputs">
+            <input type="text" name="email" id="email" placeholder="Email" ngModel>
+          </div>
+          <div class="password-input inputs">
+            <input type="password" name="password" placeholder="Password" id="password" ngModel>
+          </div>
+          <div class="checkbox-remember-me">
+            <input type="checkbox" name="rememberMe" id="rememberMe" [(ngModel)]="rememberMe">
+            <label for="rememberMe">Remember Me</label>
+          </div>
+          <div class="submit-button">
+            <button class="btn btn-submit" (click)="onClick(f.value)">Login</button>
+          </div>
+          <div class="switch-mode">Not Registered?
+            <a (click)="switchMode()">Create an account</a>
+          </div>
+        </form>
+        <form #f="ngForm" *ngIf="!loginMode">
+          <div class="first-name-input inputs">
+            <input type="text" name="firstName"   placeholder="First Name" id="firstName" ngModel>
+          </div>
+          <div class="last-name-input inputs">
+            <input type="text" name="lastName"  placeholder="Last Name" id="lastName" ngModel>
+          </div>
+          <div class="email-input inputs">
+            <input type="text" name="email" id="email"  placeholder="Email" ngModel>
+          </div>
+          <div class="password-input inputs">
+            <input type="password" name="password"  placeholder="Password" id="password" ngModel>
+          </div>
+          <div class="checkbox-remember-me">
+            <input type="checkbox" name="rememberMe"  id="rememberMe" [(ngModel)]="rememberMe">
+            <label for="rememberMe">Remember Me</label>
+          </div>
+          <div class="submit-button">
+            <button class="btn btn-submit" (click)="onClick(f.value)">Register</button>
+          </div>
+          <div class="switch-mode">Already have an account? <a  (click)="switchMode()">Login</a>
+          </div>
+        </form>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!--
+
+
+
+
+  <form #f="ngForm" *ngIf="loginMode">
+    <label for="email">Email: </label>
+    <input type="text" name="email" id="email" ngModel>
+    <br>
+    <label for="password">Password: </label>
+    <input type="password" name="password" id="password" ngModel>
+    <label for="rememberMe">Remember Me</label>
+    <input type="checkbox" name="rememberMe"  id="rememberMe" ngModel>
+
+    <button (click)="onClick(f.value)">Login</button>
+
+  </form>
+
+  <form #f="ngForm" *ngIf="!loginMode">
+  <label for="firstName">First Name: </label>
+  <input type="text" name="firstName" id="firstName" ngModel>
+  <br>
+  <label for="lastName">Last Name: </label>
+  <input type="text" name="lastName" id="lastName" ngModel>
+  <br>
+  <label for="email">Email: </label>
+  <input type="text" name="email" id="email" ngModel>
+  <br>
+  <label for="password">Password: </label>
+  <input type="password" name="password" id="password" ngModel>
+
+  <button (click)="onClick(f.value)">Sign Up</button>
+
+</form>
+
+<button (click)="loginMode = !loginMode">Switch to {{loginMode ? 'Sign Up' : 'Login'}}</button> -->
